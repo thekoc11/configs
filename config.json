@@ -1,0 +1,44 @@
+{
+    "algo": "cryptonight-lite",
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "id": null,
+        "worker-id": null,
+        "ipv6": false,
+        "restricted": true
+    },
+    "asm": true,
+    "autosave": true,
+    "av": 1,
+    "background": true,
+    "colors": true,
+    "cpu-affinity": null,
+    "cpu-priority": null,
+    "donate-level": 1,
+    "huge-pages": true,
+    "hw-aes": null,
+    "log-file": null,
+    "max-cpu-usage": 100,
+    "pools": [
+        {
+            "url": "trtl-pool.proxpool.com:5555",
+            "user": "TRTLuzVaL2Mc2gDGoWuF6pBB31R26CEVtBhMzbuGp8in1ywQsGG8mVtKBnoUR36wJAXjsJ4W2yn6SQchoGfobyCvipywQCYErcB",
+            "pass": "x",
+            "rig-id": null,
+            "nicehash": false,
+            "keepalive": false,
+            "variant": 1,
+            "tls": false,
+            "tls-fingerprint": null
+        }
+    ],
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "safe": false,
+    "threads": 7,
+    "user-agent": null,
+    "syslog": false,
+    "watch": false
+}
