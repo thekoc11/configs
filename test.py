@@ -1,17 +1,40 @@
 import telnetlib
+from time import sleep
+import socket
 
-tn = telnetlib.Telnet()
+def telnt():
+	
+	tn = telnetlib.Telnet()
+	print "808"
+	
+	try:
+		
+		tn.open("8.8.8.8", 23, 2)
+	
+	
+	except socket.timeout:
+		print "Signed in"
+		pass
+	
+	else:
+	
+		tn.read_until("login: ", 1)
 
-tn.open("8.8.8.8", 23, 2)
+		tn.write("adityap17\n")
 
-tn.read_until("login: ", 2)
+		tn.read_until("password: ", 1)
 
-tn.write("adityap17\n")
+		tn.write("iiserb5857\n")
 
-tn.read_until("password: ", 2)
+		tn.interact()
 
-tn.write("iiserb5857\n")
-
-tn.interact()
-
-tn.close()
+		tn.close()
+	
+	
+if __name__ == '__main__':
+	i = 0
+	while True:
+		telnt()
+		print ("909 + " , i)
+		sleep(10)
+		i = i + 1
