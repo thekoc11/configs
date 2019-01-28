@@ -10,6 +10,7 @@ def telnt():
 	try:
 		
 		tn.open("8.8.8.8", 23, 2)
+		print "opened"
 	
 	
 	except socket.timeout:
