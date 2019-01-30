@@ -1,20 +1,20 @@
 import telnetlib
 from time import sleep
 import socket
+import sys
 
 def telnt():
 	
-	tn = telnetlib.Telnet()
-	print "808"
+	
+	#print "808"
 	
 	try:
-		
-		tn.open("8.8.8.8", 23, 2)
-		print "opened"
+		tn = telnetlib.Telnet("8.8.8.8", 23, 2)
 	
 	
 	except socket.timeout:
-		print "Signed in"
+		#print "Signed in"
+		sys.exit(1)
 		pass
 	
 	else:
@@ -27,15 +27,20 @@ def telnt():
 
 		tn.write("iiserb5857\n")
 
-		tn.interact()
+		try:
+			tn.interact()
+		except:
+			sys.exit(0)
+			pass
 
 		tn.close()
+		
+		
 	
 	
 if __name__ == '__main__':
 	i = 0
-	while True:
-		telnt()
-		print ("909 + " , i)
-		sleep(10)
-		i = i + 1
+	telnt()
+
+
+
