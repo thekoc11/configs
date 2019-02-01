@@ -1,5 +1,5 @@
 {
-    "algo": "cryptonight-lite",
+    "algo": "cn-trtl",
     "api": {
         "port": 0,
         "access-token": null,
