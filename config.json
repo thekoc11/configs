@@ -14,11 +14,11 @@
     "background": true,
     "colors": true,
     "cpu-affinity": null,
-    "cpu-priority": null,
+    "cpu-priority": 5,
     "donate-level": 1,
     "huge-pages": true,
     "hw-aes": null,
-    "log-file": null,
+    "log-file": "trtl.log",
     "max-cpu-usage": 100,
     "pools": [
         {
