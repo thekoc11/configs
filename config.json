@@ -27,7 +27,7 @@
             "pass": "x",
             "rig-id": null,
             "nicehash": false,
-            "keepalive": false,
+            "keepalive": true,
             "variant": 1,
             "tls": false,
             "tls-fingerprint": null
