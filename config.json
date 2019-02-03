@@ -22,7 +22,7 @@
     "max-cpu-usage": 100,
     "pools": [
         {
-            "url": "trtl.pool.mine2gether.com:5555",
+            "url": "eu.turtlepool.space:5555",
             "user": "TRTLuzVaL2Mc2gDGoWuF6pBB31R26CEVtBhMzbuGp8in1ywQsGG8mVtKBnoUR36wJAXjsJ4W2yn6SQchoGfobyCvipywQCYErcB",
             "pass": "x",
             "rig-id": null,
