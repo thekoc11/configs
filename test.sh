@@ -8,7 +8,7 @@ do
 	if [ $res -eq 1 ]; then
 		sleep 5
 	else 
-		xterm -e 'python -u test.py'
+		xterm -e 'firefox --private-window detectportal.firefox.com/'
 		echo "Logged in"
 	fi
 done
